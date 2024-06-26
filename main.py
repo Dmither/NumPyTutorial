@@ -1,13 +1,11 @@
 import numpy as np
 
-arr = np.array([1, 2, 3, 4, 5])
-arrc = arr.copy()
-arrv = arr.view()
-arr[0] = 11
-arrc[1] = 22
-arrv[2] = 33
-print(arr)
-print(arrc)
-print(arrv)
-print(arrc.base)
-print(arrv.base)
+arr1 = np.array([1, 2, 3])
+arr2 = np.array([4, 5, 6])
+
+print(np.concatenate((arr1, arr2)))
+print(np.stack((arr1, arr2)))
+print(np.stack((arr1, arr2), axis=1))
+print(np.hstack((arr1, arr2)))
+print(np.vstack((arr1, arr2)))
+print(np.dstack((arr1, arr2)))
