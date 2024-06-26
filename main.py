@@ -1,11 +1,11 @@
 import numpy as np
 
-arr1 = np.array([1, 2, 3])
-arr2 = np.array([4, 5, 6])
+arr = np.array([1, 2, 3, 4, 5, 6])
+# x = [True, True, False, True, False, True]
+# print(arr[x])
 
-print(np.concatenate((arr1, arr2)))
-print(np.stack((arr1, arr2)))
-print(np.stack((arr1, arr2), axis=1))
-print(np.hstack((arr1, arr2)))
-print(np.vstack((arr1, arr2)))
-print(np.dstack((arr1, arr2)))
+ll = []
+for i in arr: ll.append(True) if i%2==0 else ll.append(False)
+
+print(ll)
+print(arr[ll])
