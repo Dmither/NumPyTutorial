@@ -1,11 +1,11 @@
-import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from numpy import random
 
-arr = np.array([1, 2, 3, 4, 5, 6])
-# x = [True, True, False, True, False, True]
-# print(arr[x])
+x1 = random.binomial(n=100, p=0.5, size=1000)
+# x1 = random.binomial(n=100, p=0.5, size=1000)
+# x2 = random.normal(loc=50, scale=5, size=1000)
 
-ll = []
-for i in arr: ll.append(True) if i%2==0 else ll.append(False)
-
-print(ll)
-print(arr[ll])
+sns.kdeplot(x1)
+# sns.kdeplot(x2)
+plt.show()
