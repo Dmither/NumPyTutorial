@@ -1,11 +1,6 @@
-import matplotlib.pyplot as plt
-import seaborn as sns
-from numpy import random
+import numpy as np
+import math
 
-x1 = random.binomial(n=100, p=0.5, size=1000)
-# x1 = random.binomial(n=100, p=0.5, size=1000)
-# x2 = random.normal(loc=50, scale=5, size=1000)
-
-sns.kdeplot(x1)
-# sns.kdeplot(x2)
-plt.show()
+arr1 = np.array([1, 1, 2, 3, 3, 4, 1])
+set1 = np.unique(arr1)
+print(set1)
